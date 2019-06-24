@@ -3,10 +3,9 @@ API design for sms management.
 
 #### Features
 - Sending SMS
-- Keeping track of SMS status.
-- Fetching all contacts
-- Fetching user messages based on status.
-- Fetching all received messages.
+- Fetching user inbox.
+- Fetching user outbox
+- Deleting messages.
 
 
 ### Setting up 
