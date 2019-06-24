@@ -1,10 +1,14 @@
 import express from 'express';
 
 import contactsController from '../controllers/contacts';
+import contactsValidation from '../validations/contacts';
 
 const contactsHandler = express();
 
-contactsHandler.post('/', contactsController.AddContact);
+contactsHandler.post(
+  '/',
+  contactsValidation.addingContact,
+  contactsController.AddContact);
 
 contactsHandler.get('/', contactsController.FetchAllContacts);
 
