@@ -1,6 +1,5 @@
 import 'dotenv/config';
 import mysql from 'mysql';
-console.log('THIS IS THE PASSWORD------------>>>>>>>>>>', process.env.LOCAL_DB_HOST);
 const client = mysql.createConnection({
   host: process.env.LOCAL_DB_HOST,
   user: process.env.LOCAL_DB_USERNAME,
